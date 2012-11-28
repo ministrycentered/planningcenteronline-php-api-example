@@ -4,12 +4,12 @@ $key = 'put your secret here after registering your application on planning cent
 // 2. set your planning center online secret for your registered application
 $secret = 'put your secret here after registering your application on planning center';
 // 3. set your callback_url
-$callback_url = "http://your-client-application-url.com/complete.php";
+$callback_url = "https://your-client-application-url.com/complete.php";
 
 $debug = true;
-$request_token_endpoint = "http://www.planningcenteronline.com/oauth/request_token";
-$authorize_endpoint = "http://www.planningcenteronline.com/oauth/authorize";
-$oauth_access_token_endpoint = "http://www.planningcenteronline.com/oauth/access_token";
+$request_token_endpoint = "https://www.planningcenteronline.com/oauth/request_token";
+$authorize_endpoint = "https://www.planningcenteronline.com/oauth/authorize";
+$oauth_access_token_endpoint = "https://www.planningcenteronline.com/oauth/access_token";
 
 /***************************************************************************
  * Function: Run CURL

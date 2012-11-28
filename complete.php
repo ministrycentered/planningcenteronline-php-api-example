@@ -44,7 +44,7 @@ $person_id = "2283";
 // EXAMPLE 1. GET Request to pull a person
 //*******************************************************************
 // build url - gets person with id of 2283
-$url = sprintf("http://www.planningcenteronline.com/people/$person_id.xml");
+$url = sprintf("https://www.planningcenteronline.com/people/$person_id.xml");
 
 // build and sign request
 $request = OAuthRequest::from_consumer_and_token($test_consumer,
@@ -71,7 +71,7 @@ echo "<p>============================================</p>";
 // EXAMPLE 2. PUT Request to put a person
 //*******************************************************************
 // build url - gets person with id of 2283
-$url = sprintf("http://www.planningcenteronline.com/people/$person_id.xml");
+$url = sprintf("https://www.planningcenteronline.com/people/$person_id.xml");
 
 //build and sign request
 $request = OAuthRequest::from_consumer_and_token($test_consumer,
