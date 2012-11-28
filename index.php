@@ -22,7 +22,7 @@ $oauth_token_secret = $tokens['oauth_token_secret'];
 
 //store key and token details in cookie to pass to complete stage
 setcookie("requestToken", "key=$key&token=$oauth_token&token_secret=$oauth_token_secret");
-       
+
 //build authentication url following sign-in and redirect user
 $auth_url = $authorize_endpoint . "?oauth_token=$oauth_token";
 header("Location: $auth_url");

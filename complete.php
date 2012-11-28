@@ -48,12 +48,12 @@ $url = sprintf("http://www.planningcenteronline.com/people/$person_id.xml");
 
 // build and sign request
 $request = OAuthRequest::from_consumer_and_token($test_consumer,
-  $access_consumer, 
+  $access_consumer,
   'GET',
-  $url, 
+  $url,
   NULL);
 $request->sign_request(new OAuthSignatureMethod_HMAC_SHA1(),
-  $test_consumer, 
+  $test_consumer,
   $access_consumer
 );
 
@@ -74,13 +74,13 @@ echo "<p>============================================</p>";
 $url = sprintf("http://www.planningcenteronline.com/people/$person_id.xml");
 
 //build and sign request
-$request = OAuthRequest::from_consumer_and_token($test_consumer, 
- $access_consumer, 
+$request = OAuthRequest::from_consumer_and_token($test_consumer,
+ $access_consumer,
  'PUT',
- $url, 
+ $url,
  array());
 $request->sign_request(new OAuthSignatureMethod_HMAC_SHA1(),
- $test_consumer, 
+ $test_consumer,
  $access_consumer
 );
 
@@ -96,7 +96,7 @@ $content = '<person><first-name>Jeff</first-name><last-name>Berg</last-name></pe
 // Make put request
 $response = run_curl($url, 'PUT', $headers, $content);
 
-//if debug mode, dump signatures & headers 
+//if debug mode, dump signatures & headers
 echo "<p>============================================</p>";
 if ($debug){
     $debug_out = array('Access token' => $access_token,
@@ -104,7 +104,7 @@ if ($debug){
                        'PUT headers'  => $headers,
                        'PUT content'  => $content,
                        'PUT response' => $response);
-    
+
     print_r($debug_out);
 }
 echo "<p>============================================</p>";

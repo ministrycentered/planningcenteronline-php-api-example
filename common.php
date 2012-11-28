@@ -21,7 +21,7 @@ $oauth_access_token_endpoint = "http://www.planningcenteronline.com/oauth/access
  **************************************************************************/
 function run_curl($url, $method = 'GET', $headers = null, $postvals = null){
     $ch = curl_init($url);
-    
+
     if ($method == 'GET'){
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -38,10 +38,10 @@ function run_curl($url, $method = 'GET', $headers = null, $postvals = null){
         );
         curl_setopt_array($ch, $options);
     }
-    
+
     $response = curl_exec($ch);
     curl_close($ch);
-    
+
     return $response;
 }
 ?>
