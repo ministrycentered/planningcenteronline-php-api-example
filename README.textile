@@ -37,3 +37,7 @@ Before anything, register your application with Planning Center Online. Contact 
 h2. Question/Comments
 
 Email support@planningcenteronline.com please.
+
+h2. License
+
+This example code is released under the "MIT License":http://www.opensource.org/licenses/MIT.
